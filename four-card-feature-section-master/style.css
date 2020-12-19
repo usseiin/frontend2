@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 30px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+article{
+    width: fit-content;
+    background: #ffffffff;
+    border-radius: 6px;
+    height: 180px;
+    padding: 20px;
+    box-shadow: 0 10px 5px 2px rgb(240, 244, 247);
+}
+body{
+    font-family: "Poppins", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #fafafaff;
+    max-height: 100vh;
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    column-gap: 20px;
+    row-gap: 22px;
+    margin-top: 45px;
+    justify-content: center;    
+}
+header{
+    text-align: center;
+}
+article:nth-child(4){
+    background: linear-gradient(180deg, #cfe4f5ff 3%, #ffffffff 3%) ;position: relative;top: 100px;
+}
+article:nth-child(1){background: linear-gradient(180deg, #4ad0d0ff 3%, #ffffffff 3%); position: relative;top: 100px;}
+article:nth-child(2){background: linear-gradient(180deg, #e95455ff 3%, #ffffffff 3%); }
+article:nth-child(3){background: linear-gradient(180deg, #f4bd76ff 3%, #ffffffff 3%);grid-area: 2/2/3/3;}
+.h22{
+    margin: 5px;
+}
+.h21{
+    font-weight: lighter;
+    margin-top: 55px;
+}
+img{
+    position: relative;
+    width: 45px;
+    top: 40px;
+    left: 160px;
+}
+p{
+    font-size: 10px;
+    color: #cac9ceff;
+}
+h3{
+    font-size: 15px;
+}
+div{
+    color: #cac9ceff;
+    font-size: 10px;
+    width: 340px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 700px){
+    section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    body{
+        max-height: none;
+    }
+    main{
+        width: 260px;
+        margin: 0 auto;
+    }
+    article{
+        width: 250px;
+        box-shadow: 0 10px 5px 2px rgb(240, 244, 247);
+    }
+    article:nth-child(4){
+        position: static;
+    }
+    article:nth-child(1){ 
+        position: static;
+    }
+    div{
+        width: auto;
+        padding: 0 5px;
+        font-size: 11px;
+    }
+    h2{
+        font-size: 20px;
+    }
+}
